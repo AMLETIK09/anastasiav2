@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пригласительное на свадьбу!</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+  <div class="hearts-background">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <main class="container">
+    
+    <!-- Главный экран -->
+    <header class="hero-section">
+        <div class="hero-names">
+          <div class="name-line name-groom">Владислав</div>
+          <div class="name-line name-symbol">&</div>
+          <div class="name-line name-bride">Анастасия</div>
+        </div>
+      </div>
+      
+      <div class="hero-right">
+        <div class="hero-photo">
+          <img src="images/one.jpg" alt="Виктор и Виктория">
+        </div>
+        <div class="hero-date-container">
+          <div class="hero-date">25 октября 2025</div>
+          <div class="hero-subtitle">ЖДЕМ ВАС</div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Таймер обратного отсчета -->
+    <div class="countdown-clean fade-in-up" id="countdown">
+      <div class="unit">
+        <div id="days">00</div>
+        <label>дней</label>
+      </div>
+      <div class="unit">
+        <div id="hours">00</div>
+        <label>часов</label>
+      </div>
+      <div class="unit">
+        <div id="minutes">00</div>
+        <label>минут</label>
+      </div>
+      <div class="unit">
+        <div id="seconds">00</div>
+        <label>секунд</label>
+      </div>
+    </div>
+    
+    <!-- Детали мероприятия -->
+    <section class="custom-text fade-in-up">
+      <h2>Приглашение</h2>
+      <p>
+        Дорогие гости! Мы создаем вечер, где детали становятся частью<br> большой любви.<br>
+        Просим Вас оставить детей дома и присоединиться к нам, чтобы вместе написать новую страничку нашей истории.<br>
+      </p>
+
+      <h2>Пожелания по подаркам</h2>
+      <p>
+       В качестве подарка мы будем рады вкладу в бюджет нашей семьи. Он точно поможет воплотить нашу мечту в реальность!<br>
+       Мы просим вас не дарить нам цветы, так как не успеем насладиться их красотой на 100%.<br>
+       Вместо цветов хотели бы получить любую бутылку вина с запиской где будет написано: дата или обстоятельства когда мы должны открыть ее и ваши личные пожелания.
+      </p>
+
+      <h2>Примечание</h2>
+      <p>
+        Будем благодарны, если вы воздержитесь от криков «Горько» на празднике, ведь поцелуй — это знак выражения чувств, он не может быть по заказу.
+      </p>
+    </section>
+
+    <!-- Информация о событии -->
+    <section class="info fade-in-up">
+      <p><strong>Дата:</strong> 25 октября 2025</p>
+      <p><strong>Время:</strong> 14:30</p>
+      <p><strong>Адрес:</strong> Банкетный зал Премьер Закулисье, город Новосибирск, улица Кропоткина, 495</p>
+    </section>
+
+<section class="timeline fade-in-up">
+  <h2 class="timeline-title">Тайминг</h2>
+
+  <div class="timeline-item">
+    <span class="time">14:30</span>
+    <img src="images/guests.svg" alt="Сбор гостей" class="timeline-icon">
+    <span class="event">Сбор гостей</span>
+  </div>
+
+  <div class="timeline-item">
+    <span class="time">15:00</span>
+    <img src="images/ceremony.svg" alt="Выездная регистрация" class="timeline-icon">
+    <span class="event">Выездная регистрация</span>
+  </div>
+
+  <div class="timeline-item">
+    <span class="time">16:00</span>
+    <img src="images/banquet.svg" alt="Банкет" class="timeline-icon">
+    <span class="event">Банкет</span>
+  </div>
+</section>
+
+
+    <!-- Дресс-код -->
+    <section class="dress-code-exact fade-in-up">
+      <h2>ДРЕСС-КОД</h2>
+      <div class="dress-text">
+        <p>Мы с особым трепетом готовимся к этому дню!</p>
+        <p>Просим поддержать нас Вашим хорошим настроением,<br>а так же прекрасным однотонными нарядами в чёрно-белых оттенках.</p>
+      </div>
+    </section>
+
+    <!-- Форма подтверждения -->
+    <form id="rsvp-form" class="fade-in-up">
+      <h2>Подтвердите присутствие</h2>
+      <label>Ваше имя и фамилия:</label>
+      <input type="text" name="name" required>
+      
+      <label>Ожидать ли вас на празднике?</label>
+      <select name="attendance" required>
+        <option value="Да">Да</option>
+        <option value="Нет">Нет</option>
+        <option value="Возможно">Сообщу позже</option>
+      </select>
+      
+      <label>Количество человек:</label>
+      <input type="number" name="guests" min="1" max="10" placeholder="1">
+      
+      <label>Комментарий:</label>
+      <textarea name="comment" rows="3" placeholder="Укажите ваши пожелания к меню (включая аллергии, если есть) и предпочтения по алкоголю"></textarea>
+      
+      <button type="submit">Отправить</button>
+      <p id="status-message"></p>
+    </form>
+  </main>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
